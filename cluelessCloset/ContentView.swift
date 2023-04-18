@@ -11,11 +11,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         ZStack {
             Image("Clueless")
                 .resizable()
                 .ignoresSafeArea()
+            
+            NavigationLink("Click Here!", destination: SecondView())
             }
+        
+        
         }
         
         struct ContentView_Previews: PreviewProvider {
