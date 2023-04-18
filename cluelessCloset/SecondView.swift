@@ -11,15 +11,17 @@ struct SecondView: View {
     @State private var shouldPresentCamera = false
     
     var body: some View {
-        
+       
         VStack {
-            Text("Hello, SwiftUI!")
+            
+            Text("No outfits? As if!")
                 .font(.largeTitle)
                 .bold()
                 .background(Color.pink)
-            
-            
-            
+                .ignoresSafeArea()
+                .opacity(0.7)
+                
+                    
             
             // Top photo
             
@@ -76,8 +78,6 @@ struct SecondView: View {
                 }
             
         }
-        
-        
     }
      
     

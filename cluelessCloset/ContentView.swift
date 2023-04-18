@@ -6,6 +6,7 @@
 //
 
 // Sora was here
+//erin was here
 
 import SwiftUI
 
@@ -18,6 +19,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             NavigationLink("Click Here!", destination: SecondView())
+                
             }
         
         
