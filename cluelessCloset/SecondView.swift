@@ -39,10 +39,7 @@ struct SecondView: View {
                 .sheet(isPresented: $shouldPresentImagePicker) {
                     SUImagePickerView(sourceType: self.shouldPresentCamera ? .camera : .photoLibrary, image: self.$image1, isPresented: self.$shouldPresentImagePicker)
                 }.actionSheet(isPresented: $shouldPresentActionSheet) { () -> ActionSheet in
-                    ActionSheet(title: Text("Choose mode"), message: Text("Please choose your preferred mode to set your profile image"), buttons: [ActionSheet.Button.default(Text("Camera"), action: {
-                        self.shouldPresentImagePicker = true
-                        self.shouldPresentCamera = true
-                    }), ActionSheet.Button.default(Text("Photo Library"), action: {
+                    ActionSheet(title: Text("Uploading Photos"), message: Text("Please click on the button to access your photo library"), buttons: [ ActionSheet.Button.default(Text("Photo Library"), action: {
                         self.shouldPresentImagePicker = true
                         self.shouldPresentCamera = false
                     }), ActionSheet.Button.cancel()])
@@ -67,10 +64,7 @@ struct SecondView: View {
                 .sheet(isPresented: $shouldPresentImagePicker2) {
                     SUImagePickerView(sourceType: self.shouldPresentCamera ? .camera : .photoLibrary, image: self.$image2, isPresented: self.$shouldPresentImagePicker2)
                 }.actionSheet(isPresented: $shouldPresentActionSheet2) { () -> ActionSheet in
-                    ActionSheet(title: Text("Choose mode"), message: Text("Please choose your preferred mode to set your profile image"), buttons: [ActionSheet.Button.default(Text("Camera"), action: {
-                        self.shouldPresentImagePicker2 = true
-                        self.shouldPresentCamera = true
-                    }), ActionSheet.Button.default(Text("Photo Library"), action: {
+                    ActionSheet(title: Text("Uploading Photo"), message: Text("Please click on the button to access your photo library"), buttons: [ ActionSheet.Button.default(Text("Photo Library"), action: {
                         self.shouldPresentImagePicker2 = true
                         self.shouldPresentCamera = false
                     }), ActionSheet.Button.cancel()])
