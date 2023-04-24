@@ -5,7 +5,7 @@
 //  Created by Srishti Kamra  on 4/11/23.
 //
 
-// Sora was here~!
+// Sora was here~
 //erin was here!
 
 import SwiftUI
