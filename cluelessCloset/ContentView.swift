@@ -24,7 +24,7 @@ struct ContentView: View {
                 .frame(width: 100)
 
                 .font(.largeTitle)
-                .foregroundStyle(.pink.gradient)
+                .foregroundStyle(.pink)
             }
             
             
