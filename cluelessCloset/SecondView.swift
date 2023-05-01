@@ -30,7 +30,7 @@ struct SecondView: View {
                 Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning!")
                     .font(.system(size: 14))
                     .bold()
-                    .background(Color.white)
+                    
                 
                 // Top photo
                 image1!
@@ -41,8 +41,6 @@ struct SecondView: View {
                     .overlay(Rectangle().stroke(Color.pink.opacity(
                         15), lineWidth: 4))
                     .shadow(radius: 5)
-                    .background(Color.pink)
-                   .opacity(0.2)
                    .padding()
                 
                 //Button that takes you to either camera roll or camera
@@ -67,8 +65,7 @@ struct SecondView: View {
                     .overlay(Rectangle().stroke(Color.pink.opacity(
                         15), lineWidth: 4))
                     .shadow(radius: 5)
-                    .background(Color.pink)
-                   .opacity(0.2)
+                    
                 
                 //Button that takes you to either camera roll or camera
                     .onTapGesture { self.shouldPresentActionSheet2 = true }
