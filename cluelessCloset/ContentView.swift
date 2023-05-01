@@ -20,11 +20,11 @@ struct ContentView: View {
                 
                 NavigationLink("Click Here!", destination:
                                 SecondView())
-               
                 .fontDesign(.serif)
                 .frame(width: 100)
+
                 .font(.largeTitle)
-                .foregroundColor(.pink)
+                .foregroundStyle(.pink)
             }
             
             

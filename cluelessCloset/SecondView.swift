@@ -21,6 +21,7 @@ struct SecondView: View {
             
             VStack {
                 Text("No outfits? As if!")
+                    .font(.largeTitle)
                     .bold()
                     .font(.system(.largeTitle, design: .rounded))
                     .foregroundStyle(.pink.gradient)
@@ -29,6 +30,7 @@ struct SecondView: View {
                 Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning!")
                     .font(.system(size: 14))
                     .bold()
+                    .background(Color.white)
                 
                 // Top photo
                 image1!
@@ -52,7 +54,9 @@ struct SecondView: View {
                             self.shouldPresentImagePicker = true
                             self.shouldPresentCamera = false
                         }), ActionSheet.Button.cancel()])
+                        
                     }
+                
                 
                 //Bottom photo
                 image2!
@@ -75,6 +79,7 @@ struct SecondView: View {
                             self.shouldPresentImagePicker2 = true
                             self.shouldPresentCamera = false
                         }), ActionSheet.Button.cancel()])
+                        
                     }
             }
         }
