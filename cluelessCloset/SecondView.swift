@@ -26,12 +26,16 @@ struct SecondView: View {
                     .font(.system(.largeTitle, design: .rounded))
                     .foregroundStyle(.pink.gradient)
                     .opacity(0.8)
-
-                Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning!")
+                    .padding()
+                
+                Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning!                                 ")
                     .font(.system(size: 14))
                     .bold()
-                    
                 
+                Text("Top:")
+                    .font(.system(size: 22))
+                    .bold()
+               
                 // Top photo
                 image1!
                     .resizable()
@@ -54,7 +58,9 @@ struct SecondView: View {
                         }), ActionSheet.Button.cancel()])
                         
                     }
-                
+                Text("Bottom:")
+                    .font(.system(size: 22))
+                    .bold()
                 
                 //Bottom photo
                 image2!
