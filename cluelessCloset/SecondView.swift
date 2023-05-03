@@ -26,14 +26,13 @@ struct SecondView: View {
                     .font(.system(.largeTitle, design: .rounded))
                     .foregroundStyle(.pink.gradient)
                     .opacity(0.8)
-                    .padding()
                 
-                Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning!                                 ")
+                Text("We suggest creating album in your cameraroll of your clothes to quicken the process of planning")
                     .font(.system(size: 14))
                     .bold()
                 
                 Text("Top:")
-                    .font(.system(size: 22))
+                    .font(.system(size: 18))
                     .bold()
                
                 // Top photo
@@ -59,7 +58,7 @@ struct SecondView: View {
                         
                     }
                 Text("Bottom:")
-                    .font(.system(size: 22))
+                    .font(.system(size: 18))
                     .bold()
                 
                 //Bottom photo
