@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct cluelessClosetApp: App {
     var body: some Scene {

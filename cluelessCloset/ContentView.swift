@@ -19,7 +19,7 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 NavigationLink("Click Here!", destination:
-                                SecondView())
+                                WeatherContentView())
                 .fontDesign(.serif)
                 .frame(width: 100)
 
