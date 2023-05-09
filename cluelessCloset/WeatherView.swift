@@ -32,7 +32,7 @@ struct WeatherView: View {
                         Spacer()
                         Text(weather.main.feelsLike
                             .roundDouble() + "°C")
-                        .font(.system(size: 100))
+                        .font(.system(size: 80))
                         .fontWeight(.bold)
                         .padding()
                     }
