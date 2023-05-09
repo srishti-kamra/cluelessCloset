@@ -22,7 +22,7 @@ struct ContentView: View {
                                 WeatherContentView())
                 .fontDesign(.serif)
                 .frame(width: 100)
-
+                
                 .font(.largeTitle)
                 .foregroundStyle(.pink)
             }
@@ -30,10 +30,10 @@ struct ContentView: View {
             
         }
     }
-        struct ContentView_Previews: PreviewProvider {
-            static var previews: some View {
-                ContentView()
-            }
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
         }
     }
+}
 

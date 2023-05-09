@@ -12,12 +12,12 @@ struct SecondView: View {
         
         ZStack {
             Color.pink
-               .opacity(0.3)
-            .ignoresSafeArea()
+                .opacity(0.3)
+                .ignoresSafeArea()
             
-//            Image("wallpaper")
-//                .resizable()
-//                .ignoresSafeArea()
+            //            Image("wallpaper")
+            //                .resizable()
+            //                .ignoresSafeArea()
             
             VStack {
                 Text("No outfits? As if!")
@@ -34,7 +34,7 @@ struct SecondView: View {
                 Text("Top:")
                     .font(.system(size: 18))
                     .bold()
-               
+                
                 // Top photo
                 image1!
                     .resizable()
@@ -44,7 +44,7 @@ struct SecondView: View {
                     .overlay(Rectangle().stroke(Color.pink.opacity(
                         15), lineWidth: 4))
                     .shadow(radius: 5)
-                   .padding()
+                    .padding()
                 
                 //Button that takes you to either camera roll or camera
                     .onTapGesture { self.shouldPresentActionSheet = true }
@@ -70,7 +70,7 @@ struct SecondView: View {
                     .overlay(Rectangle().stroke(Color.pink.opacity(
                         15), lineWidth: 4))
                     .shadow(radius: 5)
-                    
+                
                 
                 //Button that takes you to either camera roll or camera
                     .onTapGesture { self.shouldPresentActionSheet2 = true }
@@ -93,5 +93,5 @@ struct SecondView: View {
         }
     }
 }
-    
+
 
