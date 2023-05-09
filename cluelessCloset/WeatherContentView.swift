@@ -39,8 +39,7 @@ struct WeatherContentView: View {
         
         NavigationLink("Click Here!", destination:
                         SecondView())
-        .background(Color(hue: 0.4, saturation: 0.7, brightness: 0.5))
-        .preferredColorScheme(.dark)
+        
         }
     }
 
