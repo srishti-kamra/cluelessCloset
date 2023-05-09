@@ -24,7 +24,7 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: "cloud.drizzle")
+                            Image(systemName: "sun.max.fill")
                                 .font(.system(size: 45))
                             Text(weather.weather[0].main)
                                 .font(.system(size: 25))
@@ -35,6 +35,7 @@ struct WeatherView: View {
                         .font(.system(size: 80))
                         .fontWeight(.bold)
                         .padding()
+                        
                     }
                     Spacer()
                         .frame(height: 80)
@@ -60,19 +61,25 @@ struct WeatherView: View {
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Weather now")
+                    Text("Weather now").foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
                         .bold().padding(.bottom)
                     
                     HStack {
                         WeatherRow(logo: "thermometer.medium", name: "Min temp", value: (weather.main.tempMin.roundDouble() + "°C"))
+                            .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
                         //Spacer()
                         WeatherRow(logo: "thermometer.medium", name: "Max temp", value: (weather.main.tempMax.roundDouble() + "°C"))
+                            .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
+
                     }
                     HStack {
                         WeatherRow(logo: "wind", name: "Wind speed", value: (weather.wind.speed.roundDouble() + "m/s"))
+                            .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
+
                         Spacer()
                         WeatherRow(logo: "humidity", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
-                        
+                            .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
+
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading).padding()
