@@ -80,7 +80,7 @@ struct WeatherView: View {
                 .foregroundColor(Color(hue: 0.656, saturation: 0.787, brightness: 0.354)).background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])}}
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(hue: 0.656, saturation: 0.787, brightness: 0.354))
+        .background(Color(hue: 0.941, saturation: 0.317, brightness: 0.952))
         .preferredColorScheme(.dark)
     }
 }

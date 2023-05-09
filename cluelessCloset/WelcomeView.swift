@@ -19,18 +19,32 @@ struct WelcomeView: View {
                 
                 Text("Please share your current location to get the weather in your area")
                     .padding()
+                
             }
             .multilineTextAlignment(.center)
             .padding()
-            
             LocationButton(.shareCurrentLocation) {
                 locationManager.requestLocation()
+                
+                
+                
             }
             .cornerRadius(30)
             .symbolVariant(.fill)
             .foregroundColor(.white)
+            .buttonStyle(.bordered)
+            .tint(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
+            
+            
+            
+            
+            
+            
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(hue: 0.941, saturation: 0.317, brightness: 0.952))
+        .preferredColorScheme(.dark)
     }
 }
 
