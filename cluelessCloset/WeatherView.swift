@@ -67,7 +67,7 @@ struct WeatherView: View {
                     HStack {
                         WeatherRow(logo: "thermometer.medium", name: "Min temp", value: (weather.main.tempMin.roundDouble() + "°C"))
                             .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
-                        //Spacer()
+                        Spacer()
                         WeatherRow(logo: "thermometer.medium", name: "Max temp", value: (weather.main.tempMax.roundDouble() + "°C"))
                             .foregroundColor(Color(hue: 0.883, saturation: 0.563, brightness: 0.943))
 
